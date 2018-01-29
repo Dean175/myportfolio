@@ -2,6 +2,27 @@ header {
 	@include gradient($red, $purple, horizontal, left);
 }
 
+.navbar-light {
+	.navbar-brand {
+		font-family: $latoBl;
+		font-size: px_to_rem(24px);
+		color: $white;
+	}
+}
+
+.navbar-nav {
+	.nav-item {
+		.nav-link {
+			color: $dark-blue;
+
+			&:hover,
+			&:focus {
+				color: $white;
+			}
+		}
+	}
+}
+
 .name,
 .surname,
 .title {

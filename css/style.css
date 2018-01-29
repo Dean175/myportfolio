@@ -75,7 +75,20 @@ header {
   background-image: -webkit-linear-gradient(left, #da727e 0%, #685c79 100%);
   background-image: linear-gradient(to right, #da727e 0%, #685c79 100%); }
 
-/* line 5, ../sass/partials/_header.scss */
+/* line 6, ../sass/partials/_header.scss */
+.navbar-light .navbar-brand {
+  font-family: "latoblack", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff; }
+
+/* line 15, ../sass/partials/_header.scss */
+.navbar-nav .nav-item .nav-link {
+  color: #2c3e50; }
+  /* line 18, ../sass/partials/_header.scss */
+  .navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
+    color: #ffffff; }
+
+/* line 26, ../sass/partials/_header.scss */
 .name,
 .surname,
 .title {
@@ -83,27 +96,27 @@ header {
   letter-spacing: 1.5px;
   margin: 0; }
 
-/* line 13, ../sass/partials/_header.scss */
+/* line 34, ../sass/partials/_header.scss */
 .name {
   font-family: "latolight", sans-serif;
   font-size: 3.4375rem;
   text-transform: uppercase; }
 
-/* line 19, ../sass/partials/_header.scss */
+/* line 40, ../sass/partials/_header.scss */
 .surname {
   font-family: "latoregular", sans-serif;
   font-size: 3.4375rem;
   text-transform: uppercase; }
 
-/* line 25, ../sass/partials/_header.scss */
+/* line 46, ../sass/partials/_header.scss */
 .title {
   font-family: "latolight_italic", sans-serif;
   font-size: 1.875rem; }
 
-/* line 30, ../sass/partials/_header.scss */
+/* line 51, ../sass/partials/_header.scss */
 .img-container {
   width: 80%; }
 
-/* line 34, ../sass/partials/_header.scss */
+/* line 55, ../sass/partials/_header.scss */
 .header-block {
   padding: 3rem 0; }
