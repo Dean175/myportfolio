@@ -8,8 +8,9 @@
 @import "../bootstrap/scss/mixins";
 
 // import mixins
-@import "helper/mixins";
 @import "helper/variables";
+@import "helper/function";
+@import "helper/mixins";
 
 // import base style
 @import "base";

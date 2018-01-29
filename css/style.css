@@ -1,5 +1,3 @@
-/**---- colors ---**/
-/**---- Fonts ---**/
 @font-face {
   font-family: 'latoblack';
   src: url("../fonts/lato-black-webfont.eot");
@@ -88,16 +86,24 @@ header {
 /* line 13, ../sass/partials/_header.scss */
 .name {
   font-family: "latolight", sans-serif;
-  font-size: 55px;
+  font-size: 3.4375rem;
   text-transform: uppercase; }
 
 /* line 19, ../sass/partials/_header.scss */
 .surname {
   font-family: "latoregular", sans-serif;
-  font-size: 55px;
+  font-size: 3.4375rem;
   text-transform: uppercase; }
 
 /* line 25, ../sass/partials/_header.scss */
 .title {
   font-family: "latolight_italic", sans-serif;
-  font-size: 30px; }
+  font-size: 1.875rem; }
+
+/* line 30, ../sass/partials/_header.scss */
+.img-container {
+  width: 80%; }
+
+/* line 34, ../sass/partials/_header.scss */
+.header-block {
+  padding: 3rem 0; }

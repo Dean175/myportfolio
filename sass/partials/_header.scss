@@ -12,17 +12,25 @@ header {
 
 .name {
 	font-family: $latoL;
-	font-size: 55px;
+	font-size: px_to_rem(55px);
 	text-transform: uppercase;
 }
 
 .surname {
 	font-family: $lato;
-	font-size: 55px;
+	font-size: px_to_rem(55px);
 	text-transform: uppercase;
 }
 
 .title {
 	font-family: $latoLi;
-	font-size: 30px;
+	font-size: px_to_rem(30px);
+}
+
+.img-container {
+	width: 80%;
+}
+
+.header-block {
+	padding: 3rem 0;
 }
