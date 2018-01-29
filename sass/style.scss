@@ -1,9 +1,18 @@
 @charset "UTF-8";
 
+@import "compass";
+
 // import bootstrap variables, mixins and functions
 @import "../bootstrap/scss/functions";
 @import "../bootstrap/scss/variables";
 @import "../bootstrap/scss/mixins";
 
+// import mixins
+@import "helper/mixins";
+@import "helper/variables";
+
 // import base style
 @import "base";
+
+// import partials
+@import "partials/header";

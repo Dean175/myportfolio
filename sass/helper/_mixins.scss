@@ -1,0 +1,5 @@
+@mixin gradient($start-color, $end-color, $angle, $from...) {
+	background-color: $start-color; // Old browsers
+	@include filter-gradient($start-color, $end-color, $angle); // IE6-9
+	@include background-image(linear-gradient($from, $start-color 0%, $end-color 100%));
+}
