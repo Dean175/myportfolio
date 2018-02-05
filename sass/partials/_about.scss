@@ -1,0 +1,25 @@
+/*------------------------------------*/
+/*	About Section					  */
+/*------------------------------------*/
+
+#about {
+	@include gradient($about-grey, $white, horizontal, left);
+	padding: 15em 0 6em 0;
+    margin-top: -12em;
+}
+
+.circles-about {
+	@include circles(320px, $about-blue, 28%, 43%);
+}
+
+.circles-timeline-btn {
+	@include circles(160px, $red, 0, 27%);
+}
+
+.circles-work {
+	@include circles(320px, $about-blue, 28%, 43%);
+}
+
+.circles-gallery-btn {
+	@include circles(160px, $red, 0, 27%)
+}

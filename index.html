@@ -17,24 +17,27 @@
   <body>
     <!-- header -->
     
-    <header>
+    <header id="home">
       <div class="container">
-        <div class="main-menu">
+
+        <!-- Main menu -->
+        <section class="main-menu">
           <div class="row">
 
-            <!-- Main menu -->
             <div class="col-sm-12">
-              <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html">SN</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+              <nav class="navbar navbar-light">
+                <!-- <a class="navbar-brand" href="index.html">SN</a> -->
+                <div class="ml-auto">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
 
-                <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</button>
- -->
+                <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</button>-->
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                  <ul class="navbar-nav ml-auto">
+                  <ul class="navbar-nav menu-block">
                     <li class="nav-item">
                       <a class="nav-link" href="#about">About</a>
                     </li>
@@ -52,23 +55,24 @@
                 </div><!-- .collapse .navbar-collapse -->
               </nav>
             </div><!-- .col-sm -->
-            <!-- /Main menu -->
 
           </div><!-- .row -->
-        </div><!-- .main-menu -->
+        </section><!-- .main-menu -->
+        <!-- /Main menu -->
 
         <!-- Header content -->
-        <div class="header-block">
-          <div class="row">
+        <section class="header-block">
+          <div class="row align-items-center">
     
-            <div class="col-sm-6 left">
-              <div class="m-auto">
+            <div class="col-sm-6 image-block">
+              <div class="circles-container">
                 <img src="images/planet.png" class="img-fluid" alt="planet">
+
               </div>
             </div>
 
-            <div class="col-sm-6 right m-auto px-5">
-              <div class="img-container m-auto">
+            <div class="col-sm-6 text-block px-5">
+              <div class="width-80 m-auto">
                 <h1 class="name">Satyajit</h1>
                 <h2 class="surname">Nabeebacus</h2>
                 <h3 class="title">FrontEnd Developer</h3>
@@ -76,7 +80,7 @@
             </div>
 
           </div>
-        </div><!-- .header-block -->
+        </section><!-- .header-block -->
 
         <!-- /Header content -->
 
@@ -85,9 +89,115 @@
 
     <!-- /header -->
 
-    <!-- main -->
+    <!-- About -->
 
-    <!-- /main -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+      
+          <div class="col-sm-6">
+            <div class="circles-container">
+              
+              <div class="circles-about">
+                <div class="d-flex justify-content-center align-items-center">
+                  <h3>About me</h3>
+                </div>
+                <div></div>
+                <div></div>
+              </div>
+
+              <div class="circles-timeline-btn">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+
+            </div>
+          </div><!-- .col-sm-6 -->
+
+          <div class="col-sm-6 m-auto px-5">
+            <div class="m-auto">
+              <p>I have completed my Diploma in Information Systems at UDM and as
+from then I have acquired a good understanding and experience on
+the following software: Adobe Photoshop, Adobe Illustrator, Adobe
+Premiere Pro, Adobe Dreamweaver and 3DS Max.</p>
+
+<p>Having done my final year project in 3ds Max I have drawn interest in
+3d modelling which let me to start 3d development (modelling,
+texturing and animation) as a hobby but then I began to sell on
+3docean and turbosquid websites.</p>
+
+<p>Having worked for companies like Sedeco Ltd, Agileum (DCDM
+Consulting) and Esokia web agency I have acquired knowledge and
+experience on PHP, HTML, SASS, CSS, SQL, JavaScript, Wordpress
+and Drupal 7. During my time at Agileum and Esokia I have worked
+on multiples web projects.</p>
+            </div>
+          </div><!-- .col-sm-6 -->
+
+        </div><!-- .row -->
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- /About -->
+
+    <!-- Work -->
+
+    <section id="work">
+      
+      <div class="container">
+        
+        <div class="row">
+
+              <div class="col-sm-6">
+
+                <div class="gallery m-auto">
+                  
+                  <div class="left">
+                    <img src="images/agileum.png" alt="Agileum website">
+                    <img src="images/smartsense.png" alt="Smartsense website">
+                  </div>
+
+                  <div class="right">
+                    <img src="images/mpa.png" alt="MPA website">
+                    <img src="images/mtpa.png" alt="MTPA website">
+                    <img src="images/starafrica.png" alt="StarAfrica website">
+                  </div>
+
+                </div><!-- .gallery -->
+
+              </div><!-- .col-sm-6 -->
+              
+              <div class="col-sm-6">
+
+                <div class="circles-container">
+
+                  <div class="circles-work">
+                    <div class="d-flex justify-content-center align-items-center">
+                      <h3>Work</h3>
+                    </div>
+                    <div></div>
+                    <div></div>
+                  </div>
+
+                  <div class="circles-gallery-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+
+                </div><!-- .circles-container -->
+
+            </div><!-- .col-sm-6 -->
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- /Work -->
 
     <!-- footer -->
 

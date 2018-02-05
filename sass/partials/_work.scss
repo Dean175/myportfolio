@@ -1,0 +1,35 @@
+/*------------------------------------*/
+/*	Work Section					  */
+/*------------------------------------*/
+
+#work {
+	@include gradient($yellow, $work-red, horizontal, left);
+	padding: 8em 0;
+}
+
+/*---------- Gallery -------*/
+.gallery {
+	.left {
+		width: 52%;
+		float: left;
+		padding-right: 7px;
+
+		img {
+			margin-bottom: 15px;
+		}
+	}
+
+	.right {
+		width: 48%;
+		float: left;
+		padding-left: 7px;
+
+		img {
+			margin-bottom: 15px;
+		}
+	}
+
+	img {
+		max-width: 100%;
+	}
+}

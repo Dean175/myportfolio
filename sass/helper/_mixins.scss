@@ -1,5 +1,49 @@
+
+// gradient color
 @mixin gradient($start-color, $end-color, $angle, $from...) {
 	background-color: $start-color; // Old browsers
 	@include filter-gradient($start-color, $end-color, $angle); // IE6-9
 	@include background-image(linear-gradient($from, $start-color 0%, $end-color 100%));
+}
+
+// circle
+@mixin circle($radius, $background) {
+	width: $radius;
+    height: $radius;
+    background: $background;
+    border-radius: 50%;
+}
+
+// group of circles
+@mixin circles($radius, $background, $top, $left) {
+	position: absolute;
+    top: $top;
+    left: $left;
+    width: px_to_rem($radius);
+    height: px_to_rem($radius);
+
+    div {
+    	position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+
+		&:nth-child(1) {
+			@include circle(px_to_rem($radius - 40px), rgba($background, 1));
+			z-index: 2;
+		}
+
+		&:nth-child(2) {
+			@include circle(px_to_rem($radius - 20px), rgba($background, 0.5));
+			z-index: 1;
+		}
+
+		&:nth-child(3) {
+			@include circle(px_to_rem($radius), rgba($background, 0.2));
+			z-index: 0;
+		}
+    }
+
 }

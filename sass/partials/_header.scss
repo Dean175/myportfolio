@@ -1,7 +1,15 @@
-header {
+/*------------------------------------*/
+/*	Header Section					  */
+/*------------------------------------*/
+
+header#home {
 	@include gradient($red, $purple, horizontal, left);
+	padding-bottom: 8em;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 65% 100%, 0 80%);
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 65% 100%, 0 80%);
 }
 
+/*------ Main menu --------*/
 .navbar-light {
 	.navbar-brand {
 		font-family: $latoBl;
@@ -23,6 +31,28 @@ header {
 	}
 }
 
+/*------ Header content --------*/
+
+// Circles
+.circles-container {
+	position: relative;
+}
+.circle-planet {
+	@include circles(290px, $yellow, 28%, 43%);
+}
+.circle-html {
+	@include circles(160px, $purple, 0, 27%);
+}
+.circle-css {
+	@include circles(160px, $purple, 37%, 2%);
+}
+.circle-js {
+	@include circles(160px, $purple, 75%, 27%);
+}
+
+
+
+// Text block
 .name,
 .surname,
 .title {
@@ -48,7 +78,7 @@ header {
 	font-size: px_to_rem(30px);
 }
 
-.img-container {
+.width-80 {
 	width: 80%;
 }
 
