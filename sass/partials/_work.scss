@@ -3,8 +3,23 @@
 /*------------------------------------*/
 
 #work {
-	@include gradient($yellow, $work-red, horizontal, left);
-	padding: 8em 0;
+	//@include gradient($yellow, $work-red, horizontal, left);
+	padding: 16em 0 17em 0;
+	//margin: -13em 0 0 0;
+
+	z-index: 3;
+	position: relative;
+	height: 100%;
+
+	// work section clip shape
+	svg {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		fill: $yellow;
+	}
 }
 
 /*---------- Gallery -------*/
@@ -32,4 +47,12 @@
 	img {
 		max-width: 100%;
 	}
+}
+
+.circles-work {
+	@include circles(320px, $about-blue, 28%, 43%);
+}
+
+.circles-gallery-btn {
+	@include circles(160px, $red, 0, 27%)
 }

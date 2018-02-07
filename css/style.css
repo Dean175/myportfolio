@@ -68,39 +68,39 @@ html {
 /*------------------------------------*/
 /* line 5, ../sass/partials/_header.scss */
 header#home {
-  background-color: #da727e;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFDA727E', endColorstr='#FF685C79');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RhNzI3ZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzY4NWM3OSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #da727e), color-stop(100%, #685c79));
-  background-image: -moz-linear-gradient(left, #da727e 0%, #685c79 100%);
-  background-image: -webkit-linear-gradient(left, #da727e 0%, #685c79 100%);
-  background-image: linear-gradient(to right, #da727e 0%, #685c79 100%);
-  padding-bottom: 8em;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 65% 100%, 0 80%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 65% 100%, 0 80%); }
+  z-index: 5;
+  position: relative;
+  height: 100%;
+  padding: 0 0 8em 0; }
+  /* line 13, ../sass/partials/_header.scss */
+  header#home svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    fill: #da727e; }
 
 /*------ Main menu --------*/
-/* line 14, ../sass/partials/_header.scss */
+/* line 26, ../sass/partials/_header.scss */
 .navbar-light .navbar-brand {
   font-family: "latoblack", sans-serif;
   font-size: 1.5rem;
   color: #ffffff; }
 
-/* line 23, ../sass/partials/_header.scss */
+/* line 35, ../sass/partials/_header.scss */
 .navbar-nav .nav-item .nav-link {
   color: #2c3e50; }
-  /* line 26, ../sass/partials/_header.scss */
+  /* line 38, ../sass/partials/_header.scss */
   .navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
     color: #ffffff; }
 
 /*------ Header content --------*/
-/* line 37, ../sass/partials/_header.scss */
+/* line 49, ../sass/partials/_header.scss */
 .circles-container {
   position: relative; }
 
-/* line 40, ../sass/partials/_header.scss */
+/* line 52, ../sass/partials/_header.scss */
 .circle-planet {
   position: absolute;
   top: 28%;
@@ -137,7 +137,7 @@ header#home {
       border-radius: 50%;
       z-index: 0; }
 
-/* line 43, ../sass/partials/_header.scss */
+/* line 55, ../sass/partials/_header.scss */
 .circle-html {
   position: absolute;
   top: 0;
@@ -174,7 +174,7 @@ header#home {
       border-radius: 50%;
       z-index: 0; }
 
-/* line 46, ../sass/partials/_header.scss */
+/* line 58, ../sass/partials/_header.scss */
 .circle-css {
   position: absolute;
   top: 37%;
@@ -211,7 +211,7 @@ header#home {
       border-radius: 50%;
       z-index: 0; }
 
-/* line 49, ../sass/partials/_header.scss */
+/* line 61, ../sass/partials/_header.scss */
 .circle-js {
   position: absolute;
   top: 75%;
@@ -248,7 +248,7 @@ header#home {
       border-radius: 50%;
       z-index: 0; }
 
-/* line 56, ../sass/partials/_header.scss */
+/* line 68, ../sass/partials/_header.scss */
 .name,
 .surname,
 .title {
@@ -256,28 +256,28 @@ header#home {
   letter-spacing: 1.5px;
   margin: 0; }
 
-/* line 64, ../sass/partials/_header.scss */
+/* line 76, ../sass/partials/_header.scss */
 .name {
   font-family: "latolight", sans-serif;
   font-size: 3.4375rem;
   text-transform: uppercase; }
 
-/* line 70, ../sass/partials/_header.scss */
+/* line 82, ../sass/partials/_header.scss */
 .surname {
   font-family: "latoregular", sans-serif;
   font-size: 3.4375rem;
   text-transform: uppercase; }
 
-/* line 76, ../sass/partials/_header.scss */
+/* line 88, ../sass/partials/_header.scss */
 .title {
   font-family: "latolight_italic", sans-serif;
   font-size: 1.875rem; }
 
-/* line 81, ../sass/partials/_header.scss */
+/* line 93, ../sass/partials/_header.scss */
 .width-80 {
   width: 80%; }
 
-/* line 85, ../sass/partials/_header.scss */
+/* line 97, ../sass/partials/_header.scss */
 .header-block {
   padding: 3rem 0; }
 
@@ -295,10 +295,25 @@ header#home {
   background-image: -moz-linear-gradient(left, #f2eee4 0%, #ffffff 100%);
   background-image: -webkit-linear-gradient(left, #f2eee4 0%, #ffffff 100%);
   background-image: linear-gradient(to right, #f2eee4 0%, #ffffff 100%);
-  padding: 15em 0 6em 0;
-  margin-top: -12em; }
+  position: relative;
+  padding: 7em 0 7em 0; }
+  /* line 11, ../sass/partials/_about.scss */
+  #about:before, #about:after {
+    content: '';
+    position: absolute;
+    background: inherit;
+    width: 100%;
+    height: 50%; }
+  /* line 20, ../sass/partials/_about.scss */
+  #about:before {
+    top: 0;
+    transform: translateY(-100%); }
+  /* line 25, ../sass/partials/_about.scss */
+  #about:after {
+    bottom: 0;
+    transform: translateY(100%); }
 
-/* line 11, ../sass/partials/_about.scss */
+/* line 32, ../sass/partials/_about.scss */
 .circles-about {
   position: absolute;
   top: 28%;
@@ -335,7 +350,7 @@ header#home {
       border-radius: 50%;
       z-index: 0; }
 
-/* line 15, ../sass/partials/_about.scss */
+/* line 36, ../sass/partials/_about.scss */
 .circles-timeline-btn {
   position: absolute;
   top: 0;
@@ -372,7 +387,46 @@ header#home {
       border-radius: 50%;
       z-index: 0; }
 
-/* line 19, ../sass/partials/_about.scss */
+/*------------------------------------*/
+/*	Work Section					  */
+/*------------------------------------*/
+/* line 5, ../sass/partials/_work.scss */
+#work {
+  padding: 16em 0 17em 0;
+  z-index: 3;
+  position: relative;
+  height: 100%; }
+  /* line 15, ../sass/partials/_work.scss */
+  #work svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    fill: #ffbc67; }
+
+/*---------- Gallery -------*/
+/* line 27, ../sass/partials/_work.scss */
+.gallery .left {
+  width: 52%;
+  float: left;
+  padding-right: 7px; }
+  /* line 32, ../sass/partials/_work.scss */
+  .gallery .left img {
+    margin-bottom: 15px; }
+/* line 37, ../sass/partials/_work.scss */
+.gallery .right {
+  width: 48%;
+  float: left;
+  padding-left: 7px; }
+  /* line 42, ../sass/partials/_work.scss */
+  .gallery .right img {
+    margin-bottom: 15px; }
+/* line 47, ../sass/partials/_work.scss */
+.gallery img {
+  max-width: 100%; }
+
+/* line 52, ../sass/partials/_work.scss */
 .circles-work {
   position: absolute;
   top: 28%;
@@ -409,7 +463,7 @@ header#home {
       border-radius: 50%;
       z-index: 0; }
 
-/* line 23, ../sass/partials/_about.scss */
+/* line 56, ../sass/partials/_work.scss */
 .circles-gallery-btn {
   position: absolute;
   top: 0;
@@ -447,38 +501,193 @@ header#home {
       z-index: 0; }
 
 /*------------------------------------*/
-/*	Work Section					  */
+/*	Skills Section					  */
 /*------------------------------------*/
-/* line 5, ../sass/partials/_work.scss */
-#work {
-  background-color: #ffbc67;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFFFBC67', endColorstr='#FFE18179');
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYmM2NyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UxODE3OSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffbc67), color-stop(100%, #e18179));
-  background-image: -moz-linear-gradient(left, #ffbc67 0%, #e18179 100%);
-  background-image: -webkit-linear-gradient(left, #ffbc67 0%, #e18179 100%);
-  background-image: linear-gradient(to right, #ffbc67 0%, #e18179 100%);
-  padding: 8em 0; }
+/* line 5, ../sass/partials/_skills.scss */
+#skills {
+  padding: 21em 0 16em 0;
+  z-index: 2;
+  position: relative;
+  height: 100%; }
+  /* line 14, ../sass/partials/_skills.scss */
+  #skills svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    fill: #da727e; }
 
-/*---------- Gallery -------*/
-/* line 12, ../sass/partials/_work.scss */
-.gallery .left {
-  width: 52%;
-  float: left;
-  padding-right: 7px; }
-  /* line 17, ../sass/partials/_work.scss */
-  .gallery .left img {
-    margin-bottom: 15px; }
-/* line 22, ../sass/partials/_work.scss */
-.gallery .right {
-  width: 48%;
-  float: left;
-  padding-left: 7px; }
-  /* line 27, ../sass/partials/_work.scss */
-  .gallery .right img {
-    margin-bottom: 15px; }
-/* line 32, ../sass/partials/_work.scss */
-.gallery img {
-  max-width: 100%; }
+/* line 24, ../sass/partials/_skills.scss */
+.circles-skills {
+  position: absolute;
+  top: 28%;
+  left: 43%;
+  width: 20rem;
+  height: 20rem; }
+  /* line 25, ../sass/helper/_mixins.scss */
+  .circles-skills div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    /* line 33, ../sass/helper/_mixins.scss */
+    .circles-skills div:nth-child(1) {
+      width: 17.5rem;
+      height: 17.5rem;
+      background: #6480a7;
+      border-radius: 50%;
+      z-index: 2; }
+    /* line 38, ../sass/helper/_mixins.scss */
+    .circles-skills div:nth-child(2) {
+      width: 18.75rem;
+      height: 18.75rem;
+      background: rgba(100, 128, 167, 0.5);
+      border-radius: 50%;
+      z-index: 1; }
+    /* line 43, ../sass/helper/_mixins.scss */
+    .circles-skills div:nth-child(3) {
+      width: 20rem;
+      height: 20rem;
+      background: rgba(100, 128, 167, 0.2);
+      border-radius: 50%;
+      z-index: 0; }
+
+/* line 28, ../sass/partials/_skills.scss */
+.circles-skills-btn {
+  position: absolute;
+  top: 0;
+  left: 27%;
+  width: 10rem;
+  height: 10rem; }
+  /* line 25, ../sass/helper/_mixins.scss */
+  .circles-skills-btn div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    /* line 33, ../sass/helper/_mixins.scss */
+    .circles-skills-btn div:nth-child(1) {
+      width: 7.5rem;
+      height: 7.5rem;
+      background: #2c3e50;
+      border-radius: 50%;
+      z-index: 2; }
+    /* line 38, ../sass/helper/_mixins.scss */
+    .circles-skills-btn div:nth-child(2) {
+      width: 8.75rem;
+      height: 8.75rem;
+      background: rgba(44, 62, 80, 0.5);
+      border-radius: 50%;
+      z-index: 1; }
+    /* line 43, ../sass/helper/_mixins.scss */
+    .circles-skills-btn div:nth-child(3) {
+      width: 10rem;
+      height: 10rem;
+      background: rgba(44, 62, 80, 0.2);
+      border-radius: 50%;
+      z-index: 0; }
+
+/* line 33, ../sass/partials/_skills.scss */
+.skills .skill {
+  width: 160px;
+  height: 160px;
+  background: #2c3e50;
+  border-radius: 50%;
+  margin: 1em 0; }
+
+/*------------------------------------*/
+/*	Contact Section					  */
+/*------------------------------------*/
+/* line 5, ../sass/partials/_contact.scss */
+#contact {
+  padding: 16em 0;
+  z-index: 2;
+  position: relative;
+  height: 100%; }
+  /* line 15, ../sass/partials/_contact.scss */
+  #contact svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    fill: #685c79; }
+
+/* line 25, ../sass/partials/_contact.scss */
+.circles-contact {
+  position: absolute;
+  top: 28%;
+  left: 43%;
+  width: 20rem;
+  height: 20rem; }
+  /* line 25, ../sass/helper/_mixins.scss */
+  .circles-contact div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    /* line 33, ../sass/helper/_mixins.scss */
+    .circles-contact div:nth-child(1) {
+      width: 17.5rem;
+      height: 17.5rem;
+      background: #6480a7;
+      border-radius: 50%;
+      z-index: 2; }
+    /* line 38, ../sass/helper/_mixins.scss */
+    .circles-contact div:nth-child(2) {
+      width: 18.75rem;
+      height: 18.75rem;
+      background: rgba(100, 128, 167, 0.5);
+      border-radius: 50%;
+      z-index: 1; }
+    /* line 43, ../sass/helper/_mixins.scss */
+    .circles-contact div:nth-child(3) {
+      width: 20rem;
+      height: 20rem;
+      background: rgba(100, 128, 167, 0.2);
+      border-radius: 50%;
+      z-index: 0; }
+
+/* line 29, ../sass/partials/_contact.scss */
+.circles-contact-btn {
+  position: absolute;
+  top: 0;
+  left: 27%;
+  width: 10rem;
+  height: 10rem; }
+  /* line 25, ../sass/helper/_mixins.scss */
+  .circles-contact-btn div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    /* line 33, ../sass/helper/_mixins.scss */
+    .circles-contact-btn div:nth-child(1) {
+      width: 7.5rem;
+      height: 7.5rem;
+      background: #2c3e50;
+      border-radius: 50%;
+      z-index: 2; }
+    /* line 38, ../sass/helper/_mixins.scss */
+    .circles-contact-btn div:nth-child(2) {
+      width: 8.75rem;
+      height: 8.75rem;
+      background: rgba(44, 62, 80, 0.5);
+      border-radius: 50%;
+      z-index: 1; }
+    /* line 43, ../sass/helper/_mixins.scss */
+    .circles-contact-btn div:nth-child(3) {
+      width: 10rem;
+      height: 10rem;
+      background: rgba(44, 62, 80, 0.2);
+      border-radius: 50%;
+      z-index: 0; }

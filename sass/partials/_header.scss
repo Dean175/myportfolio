@@ -3,10 +3,22 @@
 /*------------------------------------*/
 
 header#home {
-	@include gradient($red, $purple, horizontal, left);
-	padding-bottom: 8em;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 65% 100%, 0 80%);
-	clip-path: polygon(0 0, 100% 0, 100% 80%, 65% 100%, 0 80%);
+	//@include gradient($red, $purple, horizontal, left);
+	z-index: 5;
+	position: relative;
+	height: 100%;
+    padding: 0 0 8em 0;
+
+	// header section clip shape
+	svg {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		fill: #da727e;
+	}
+
 }
 
 /*------ Main menu --------*/
