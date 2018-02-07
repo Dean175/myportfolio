@@ -3,21 +3,37 @@
 /*------------------------------------*/
 
 #skills {
-    padding: 21em 0 16em 0;
-    //margin: -16em 0 0 0;
-
-    z-index: 2;
+	@include gradient($red-purple, $red, horizontal, left);
+    padding: 8em 0 8em 0;
 	position: relative;
-	height: 100%;
 
 	// work section clip shape
-	svg {
+	/*svg {
 		position: absolute;
 		bottom: 0;
 		width: 100%;
 		height: 100%;
 		z-index: -1;
 		fill: $red;
+	}*/
+
+	&:before,
+	&:after {
+		content:  '';
+		position:  absolute;
+		background: inherit;
+		width: 100%;
+		height: 50%;
+	}
+
+	&:before {
+		top: 0;
+		transform: translateY(-100%);
+	}
+
+	&:after {
+		bottom: 0;
+		transform: translateY(100%);
 	}
 }
 
